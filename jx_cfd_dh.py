@@ -14,7 +14,7 @@ from ql_api import get_envs, disable_env, post_envs, put_envs
 
 #获取最新的cfd100元链接
 def get_cfd100url():
-    APIurl = 'https://v1.114api.com/jd/cfd'
+    APIurl = 'https://m.jingxi.com/jxbfd/user/ExchangePrize?strZone=jxbfd&bizCode=jxbfd&source=jxbfd&dwEnv=7&_cfd_t=1646140262477&ptag=138631.77.28&dwType=3&dwLvl=7&ddwPaperMoney=100000&strPoolName=jxcfd2_exchange_hb_202203&strPgtimestamp=1646140262460&strPhoneID=f9c605eeec708657&strPgUUNum=ac5345a3f3c9cf032eb88ff4ae18fb31&_stk=_cfd_t%2CbizCode%2CddwPaperMoney%2CdwEnv%2CdwLvl%2CdwType%2Cptag%2Csource%2CstrPgUUNum%2CstrPgtimestamp%2CstrPhoneID%2CstrPoolName%2CstrZone&_ste=1&h5st=20220301211102478%3B7740459317506246%3B92a36%3Btk02wa9ed1c5a18nBzjmYG9VU64WkOk5t7WNaiWksKjKdKGbg%2BOsqPbefW6LPWUTl7T%2BF7OwEnsHpcxBrlPY0%2F8zJclu%3B0d5b9a58961ba81a0bfd6f0565557a5fd3fe768bbd19597b66c660ee2f0dbd54%3B3.0%3B1646140262478&_=1646140262479&sceneval=2&g_login_type=1&callback=jsonpCBKI&g_ty=ls'
     def get_page(url):
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36 Edg/96.0.1054.62'
