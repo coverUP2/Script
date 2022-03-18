@@ -12,25 +12,7 @@ from requests import RequestException
 from ql_util import get_random_str
 from ql_api import get_envs, disable_env, post_envs, put_envs
 
-#获取最新的cfd100元链接
-def get_cfd100url():
-    APIurl = 'https://v1.114api.com/jd/cfd'
-    def get_page(url):
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36 Edg/96.0.1054.62'
-            }
-        try:
-            response=requests.get(url,headers=headers)
-            if response.status_code==200:
-                return response.text
-            return None
-        except RequestException:
-            return None
-    text = get_page(APIurl)
-    text1 = json.loads(text)
-    text2 = text1['data']
-    cfd100url = text2['result']
-    return cfd100url
+#获取最新的cfd100元链
 # 默认配置(看不懂代码也勿动)
 cfd_start_time = -0.15
 cfd_offset_time = 0.01
